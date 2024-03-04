@@ -23,7 +23,7 @@ export default function Carousel({ images }: CarouselProps) {
         <div className="grid grid-flow-col gap-5 auto-cols-[80%] lg:auto-cols-[23.75%]">
           {images.map(item => {
             return (
-              <div className="relative h-[380px] lg:h-[414px] rounded-2xl overflow-hidden group cursor-default">
+              <div key={item.alt} className="relative h-[380px] lg:h-[414px] rounded-2xl overflow-hidden group cursor-default">
                 {/* ---- img carousel ---- */}
                 <img src={item.src} alt={item.alt} className="object-cover h-full w-full rounded-2xl" />
 

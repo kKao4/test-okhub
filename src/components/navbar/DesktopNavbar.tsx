@@ -18,7 +18,7 @@ const navbar: INavbar[] = [
 ]
 export default function DesktopNavbar() {
   return (
-    <nav className="flex flex-row gap-2 justify-center items-center grow mx-auto">
+    <nav className="flex flex-row items-center justify-center gap-2 mx-auto grow">
       {navbar.map(item => {
         return <DesktopNavLink key={item.text} canDropdown={!!item.canDropdown}>{item.text}</DesktopNavLink>
       })}

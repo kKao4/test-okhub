@@ -84,6 +84,7 @@ export default function CarouselModal({ activeCarousel, setActiveCarousel }: Car
               {buttonsCarouselTab.map(item => {
                 return (
                   <BorderBottomButton
+                    key={item.text}
                     active={activeCarousel === item.value}
                     onClick={() => setActiveCarousel(item.value)}
                   >

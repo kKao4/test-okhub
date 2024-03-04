@@ -124,6 +124,7 @@ export default function FourthSection() {
               {buttonsCarouselTab.map(item => {
                 return (
                   <BorderBottomButton
+                    key={item.text}
                     className="lg:first-of-type:ml-auto"
                     active={activeCarousel === item.value}
                     onClick={() => {

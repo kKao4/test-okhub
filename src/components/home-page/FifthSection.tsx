@@ -109,7 +109,7 @@ export default function FifthSection() {
             <AccordionContainer>
               {natureAccordion.map(item => {
                 return (
-                  <Accordion {...item} />
+                  <Accordion key={item.title} {...item} />
                 )
               })}
             </AccordionContainer>
@@ -133,7 +133,7 @@ export default function FifthSection() {
             <AccordionContainer>
               {journeyAccordion.map(item => {
                 return (
-                  <Accordion {...item} />
+                  <Accordion key={item.title} {...item} />
                 )
               })}
             </AccordionContainer>
