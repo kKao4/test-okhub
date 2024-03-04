@@ -52,7 +52,7 @@ export default function SecondSection() {
       }
     }, "<");
     tl.to("[data-role='heading-text']", {
-      top: "210px", scrollTrigger: {
+      top: "25%", scrollTrigger: {
         trigger: sectionRef.current,
         start: "top+=50% bottom",
         scrub: 1,
