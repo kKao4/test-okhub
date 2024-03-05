@@ -6,7 +6,7 @@ interface InformationContainerProps extends React.ComponentProps<"div"> {
 
 export default function InformationContainer({ children, className, ...props }: InformationContainerProps) {
   return (
-    <div {...props} className={cn("flex flex-row gap-1", className)}>
+    <div {...props} className={cn("flex flex-row gap-1.5 items-center", className)}>
       {children}
     </div>
   )
